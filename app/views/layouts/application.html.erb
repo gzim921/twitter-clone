@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TwitterClone</title>
+    <title>Twitter-Clone</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section class="section">
+      <%= render 'shared/navBar' %>
+      <%= render 'shared/flash' %>
+
+      <%= yield %>
+    </section>
   </body>
 </html>

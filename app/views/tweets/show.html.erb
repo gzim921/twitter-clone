@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="columns is-multiline">
+    <div class="column is-6 is-offset-3">
+      <div class="content is-size-3">
+        <h1><%= @tweet.title %></h1>
+      </div>
+    </div>
+    <%= render @tweet, show: true %>
+    <div class="column is-7 is-offset-2">
+      <div class="content is-size-5">
+        <h1>Comments:</h1>
+      </div>
+    </div>
+      <%= render @tweet.comments %>
+  </div>
+</div>
